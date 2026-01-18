@@ -1,0 +1,274 @@
+/* =========================
+   Split Auth (ElectroMarket)
+========================= */
+
+.split-auth-page{
+  min-height: 100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding: 40px 18px;
+  background: #f1f5f9;
+}
+
+.split-auth-card{
+  width: min(980px, 100%);
+  min-height: 520px;
+  display:grid;
+  grid-template-columns: 1fr 1.2fr;
+  background: #fff;
+  border-radius: 22px;
+  overflow:hidden;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+  border: 1px solid #e2e8f0;
+}
+
+/* Left panel */
+.split-auth-left{
+  padding: 40px 34px;
+  color: #fff;
+  position: relative;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.split-auth-left::after{
+  content:"";
+  position:absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  right: -90px;
+  bottom: -90px;
+  background: rgba(255,255,255,0.18);
+}
+
+.brand-mini{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 60px;
+}
+
+.split-auth-left h2{
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.split-auth-left p{
+  opacity: 0.9;
+  line-height: 1.7;
+  margin-bottom: 26px;
+}
+
+.split-auth-left .side-btn{
+  display:inline-block;
+  padding: 11px 20px;
+  border-radius: 999px;
+  border: 2px solid rgba(255,255,255,0.85);
+  color:#fff;
+  font-weight:800;
+  text-decoration:none;
+  transition:0.25s;
+}
+.split-auth-left .side-btn:hover{
+  background:#fff;
+  color: #1d4ed8;
+}
+
+/* Right panel */
+.split-auth-right{
+  padding: 40px 46px;
+}
+
+.split-auth-right h2{
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 8px;
+  text-align:center;
+}
+
+.split-auth-subtitle{
+  text-align:center;
+  color:#64748b;
+  margin-bottom: 20px;
+}
+
+/* inputs */
+.split-form .form-group{
+  margin-bottom: 14px;
+}
+
+.split-form label{
+  display:block;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color:#0f172a;
+}
+
+.split-form input{
+  width:100%;
+  padding: 13px 14px;
+  border-radius: 14px;
+  border: 1px solid #cbd5e1;
+  outline:none;
+  transition: 0.2s;
+  font-size: 1rem;
+  background: #f8fafc;
+}
+
+.split-form input:focus{
+  border-color: #2563eb;
+  box-shadow: 0 0 0 5px rgba(37,99,235,0.15);
+  background:#fff;
+}
+
+/* main button */
+.split-submit{
+  width:100%;
+  padding: 13px 16px;
+  border-radius: 999px;
+  border:none;
+  cursor:pointer;
+  font-weight:900;
+  font-size: 1rem;
+  color:#000000;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  box-shadow: 0 16px 40px rgba(249,115,22,0.35);
+  margin-top: 10px;
+  transition:0.25s;
+}
+
+.split-submit:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 22px 55px rgba(249,115,22,0.45);
+}
+
+.split-links{
+  text-align:center;
+  margin-top: 16px;
+  color:#64748b;
+}
+
+.split-links a{
+  color: #2563eb;
+  font-weight: 800;
+  text-decoration:none;
+}
+
+.split-links a:hover{
+  text-decoration: underline;
+}
+
+/* responsive */
+@media (max-width: 900px){
+  .split-auth-card{ grid-template-columns: 1fr; }
+  .split-auth-left{ text-align:center; }
+  .brand-mini{ justify-content:center; }
+}
+
+/* =========================================
+   ✅ IMPORTANT FIX: Input text visibility
+   Prevent input text turning white because of
+   browser autofill or inherited styles.
+========================================= */
+
+/* Force readable text inside all auth inputs */
+.auth-page input,
+.auth-page textarea,
+.auth-page select,
+.split-auth-page input,
+.split-auth-page textarea,
+.split-auth-page select,
+.split-auth-right input,
+.split-auth-right textarea,
+.split-auth-right select,
+.auth-form input,
+.auth-form textarea,
+.auth-form select,
+.split-form input{
+  color: #0f172a !important;
+  -webkit-text-fill-color: #0f172a !important;
+}
+
+/* Autofill fix (Chrome/Edge) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #0f172a !important;
+  transition: background-color 9999s ease-in-out 0s;
+  box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
+
+/* =========================================
+   AUTH INPUT TEXT VISIBILITY FIX
+========================================= */
+
+/* Force readable text inside all auth inputs */
+.split-auth-page input,
+.split-auth-page textarea,
+.split-auth-page select {
+  color: #0f172a !important;
+  background-color: white !important;
+}
+
+/* Specifically target form inputs in the split auth form */
+.split-form input {
+  color: #0f172a !important;
+  background-color: #f8fafc !important;
+}
+
+.split-form input:focus {
+  background-color: white !important;
+}
+
+/* Override for Chrome autofill */
+.split-form input:-webkit-autofill,
+.split-form input:-webkit-autofill:hover,
+.split-form input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #0f172a !important;
+  -webkit-box-shadow: 0 0 0px 1000px #f8fafc inset !important;
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+.split-form input:focus:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  background-color: white !important;
+}
+
+/* Ensure labels and text are visible */
+.split-form label {
+  color: #0f172a !important;
+}
+
+.split-auth-subtitle {
+  color: #64748b !important;
+}
+
+/* Fix for the login form specifically */
+.split-auth-right h2 {
+  color: #0f172a !important;
+}
+
+.split-links {
+  color: #64748b !important;
+}
+
+.split-links a {
+  color: #2563eb !important;
+}
+
+/* Make sure the container text is visible */
+.split-auth-left h2,
+.split-auth-left p,
+.brand-mini {
+  color: white !important; /* This should already be white on blue background */
+}

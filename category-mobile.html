@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phones | ElectroMarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- HEADER --><header>
+    <div class="container">
+        <div class="header-content">
+
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>ElectroMarket</span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html" class="active">Categories</a></li>
+                    <li><a href="sell-items.html">Sell Item</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- REPLACE THIS SECTION: -->
+            <!-- DELETE the existing auth-buttons div: -->
+            <!-- 
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </a>
+                <a href="#" class="btn btn-primary">
+                    <i class="fas fa-user-plus"></i> Sign Up
+                </a>
+            </div>
+            -->
+
+            <!-- ADD THIS INSTEAD: -->
+            <div class="header-right-buttons">
+                <button class="btn btn-outline cart-button" onclick="window.location.href='cart.html'">
+                    <i class="fas fa-shopping-cart"></i> Cart
+                    <span class="cart-count">0</span>
+                </button>
+                
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </a>
+                    <a href="signUp.html" class="btn btn-primary">
+                        <i class="fas fa-user-plus"></i> Sign Up
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<!-- PHONES LIST -->
+<section class="section">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Available Phones</h2>
+            <p>Choose from the latest smartphones</p>
+        </div>
+
+        <div class="products">
+
+            <!-- Phone 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="css/images/iPhone 13.jpg" alt="iPhone 13">
+                    <span class="product-badge">New</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>iPhone 13</h3>
+                    <p>128GB, Excellent condition, unlocked.</p>
+
+                    <div class="product-price">
+                        <span class="price">$750</span>
+                        <span class="original-price">$820</span>
+                    </div>
+
+                    <!-- Added: Add to Cart button -->
+                <!-- On your product page, update the Add to Cart buttons like this: -->
+<button class="add-to-cart-btn" 
+        onclick="addToCart('101', 'iPhone 13', 750, 'images/iPhone 13.jpg')">
+    <i class="fas fa-shopping-cart"></i> Add to Cart
+</button>
+                </div>
+            </div>
+
+            <!-- Phone 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="css/images/Samsung Galaxy S22.jpg" alt="Samsung Galaxy S22">
+                    <span class="product-badge">New</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>Samsung Galaxy S22</h3>
+                    <p>256GB, very clean, original charger.</p>
+
+                    <div class="product-price">
+                        <span class="price">$680</span>
+                    </div>
+
+                    <!-- Added: Add to Cart button -->
+                    <button class="add-to-cart-btn" 
+                            data-id="102" 
+                            data-name="Samsung Galaxy S22" 
+                            data-price="680"
+                            data-image="images/Samsung Galaxy S22.jpg">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Phone 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="css/images/Xiaomi Redmi Note12.jpg" alt="Xiaomi Redmi">
+                    <span class="product-badge">Used</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>Xiaomi Redmi Note 12</h3>
+                    <p>Great performance for daily use.</p>
+
+                    <div class="product-price">
+                        <span class="price">$320</span>
+                    </div>
+
+                    <!-- Added: Add to Cart button -->
+                    <button class="add-to-cart-btn" 
+                            data-id="103" 
+                            data-name="Xiaomi Redmi Note 12" 
+                            data-price="320"
+                            data-image="images/Xiaomi Redmi Note12.jpg">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Phone 4 (Additional phone example) -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Google Pixel 7">
+                    <span class="product-badge">Sale</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>Google Pixel 7</h3>
+                    <p>128GB, Excellent camera, like new condition.</p>
+
+                    <div class="product-price">
+                        <span class="price">$550</span>
+                        <span class="original-price">$650</span>
+                    </div>
+
+                    <!-- Added: Add to Cart button -->
+                    <button class="add-to-cart-btn" 
+                            data-id="104" 
+                            data-name="Google Pixel 7" 
+                            data-price="550"
+                            data-image="https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Phone 5 (Additional phone example) -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="OnePlus 11">
+                    <span class="product-badge">New</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>OnePlus 11</h3>
+                    <p>256GB, Fast charging included, excellent condition.</p>
+
+                    <div class="product-price">
+                        <span class="price">$720</span>
+                        <span class="original-price">$800</span>
+                    </div>
+
+                    <!-- Added: Add to Cart button -->
+                    <button class="add-to-cart-btn" 
+                            data-id="105" 
+                            data-name="OnePlus 11" 
+                            data-price="720"
+                            data-image="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Phone 6 (Additional phone example) -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="css/images/Samsung Galaxy Z Flip 4.jpg" alt="Samsung Galaxy Z Flip">
+                    <span class="product-badge">Featured</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>Samsung Galaxy Z Flip 4</h3>
+                    <p>Foldable smartphone, 256GB, excellent condition.</p>
+
+                    <div class="product-price">
+                        <span class="price">$850</span>
+                        <span class="original-price">$950</span>
+                    </div>
+
+                    <!-- Added: Add to Cart button -->
+                    <button class="add-to-cart-btn" 
+                            data-id="106" 
+                            data-name="Samsung Galaxy Z Flip 4" 
+                            data-price="850"
+                            data-image="https://images.unsplash.com/photo-1592910147752-3d6e8a5aad32?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>ElectroMarket</h3>
+                <p>Your trusted marketplace for buying and selling electronics safely and easily.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="sell-items.html">Sell Item</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">How to Buy</a></li>
+                    <li><a href="#">How to Sell</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> info@electromarket.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 ElectroMarket. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>

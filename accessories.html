@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Accessories | ElectroMarket</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>ElectroMarket</span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category-item-card.html" class="active">Categories</a></li>
+                    <li><a href="sell-items.html">Sell Item</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right-buttons">
+                <button class="btn btn-outline cart-button" onclick="window.location.href='cart.html'">
+                    <i class="fas fa-shopping-cart"></i> Cart
+                    <span class="cart-count">0</span>
+                </button>
+                
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </a>
+                    <a href="signUp.html" class="btn btn-primary">
+                        <i class="fas fa-user-plus"></i> Sign Up
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ACCESSORIES HERO SECTION -->
+<section class="hero accessories-hero">
+    <div class="container">
+        <h1><i class="fas fa-headphones"></i> Electronics Accessories</h1>
+        <p>Complete your setup with premium accessories for all your electronic devices</p>
+    </div>
+</section>
+
+<!-- ACCESSORIES FILTERS -->
+<section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Browse Accessories</h2>
+            <p>Find the perfect accessories to enhance your devices</p>
+        </div>
+
+        <div class="accessories-filters">
+            <button class="accessories-filter-btn active" data-filter="all">
+                <i class="fas fa-boxes"></i> All Accessories
+            </button>
+            <button class="accessories-filter-btn" data-filter="audio">
+                <i class="fas fa-headphones"></i> Audio
+            </button>
+            <button class="accessories-filter-btn" data-filter="charging">
+                <i class="fas fa-bolt"></i> Charging
+            </button>
+            <button class="accessories-filter-btn" data-filter="cases">
+                <i class="fas fa-shield-alt"></i> Cases & Protection
+            </button>
+            <button class="accessories-filter-btn" data-filter="wearable">
+                <i class="fas fa-watch"></i> Wearables
+            </button>
+            <button class="accessories-filter-btn" data-filter="smart-home">
+                <i class="fas fa-home"></i> Smart Home
+            </button>
+        </div>
+
+        <!-- ACCESSORIES LIST -->
+        <div class="products" id="accessories-list">
+
+            <!-- Wireless Earbuds -->
+            <div class="product-card accessories-card" data-type="audio">
+                <div class="product-image">
+                    <img src="images/accessory-logo.avif" alt="Wireless Earbuds">
+                    <span class="accessories-type-badge audio">Audio</span>
+                    <span class="product-badge wireless">Wireless</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>Apple AirPods Pro 2</h3>
+                    <p>Active noise cancellation, adaptive transparency, and spatial audio.</p>
+                    
+                    <div class="accessories-specs">
+                        <span class="accessories-spec-badge"><i class="fas fa-bluetooth"></i> Bluetooth 5.3</span>
+                        <span class="accessories-spec-badge"><i class="fas fa-water"></i> Water resistant</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="price">$199</span>
+                        <span class="original-price">$249</span>
+                    </div>
+
+                    <div class="accessories-actions">
+                        <button class="add-to-cart-btn accessories" 
+                                data-id="acc-001" 
+                                data-name="Apple AirPods Pro 2" 
+                                data-price="199"
+                                data-image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wireless Charger -->
+            <div class="product-card accessories-card" data-type="charging">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Wireless Charger">
+                    <span class="accessories-type-badge charging">Charging</span>
+                    <span class="product-badge best-seller">Best Seller</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>Belkin 3-in-1 Wireless Charger</h3>
+                    <p>Charge iPhone, Apple Watch, and AirPods simultaneously.</p>
+                    
+                    <div class="accessories-specs">
+                        <span class="accessories-spec-badge"><i class="fas fa-bolt"></i> Fast Charge</span>
+                        <span class="accessories-spec-badge"><i class="fas fa-mobile-alt"></i> 3 Devices</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="price">$89</span>
+                        <span class="original-price">$119</span>
+                    </div>
+
+                    <div class="accessories-actions">
+                        <button class="add-to-cart-btn accessories" 
+                                data-id="acc-002" 
+                                data-name="Belkin 3-in-1 Wireless Charger" 
+                                data-price="89"
+                                data-image="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phone Case -->
+            <div class="product-card accessories-card" data-type="cases">
+                <div class="product-image">
+                    <img src="images/OtterBox Defender Pro Case.avif" alt="Phone Case">
+                    <span class="accessories-type-badge cases">Protection</span>
+                    <span class="product-badge waterproof">Waterproof</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>OtterBox Defender Pro Case</h3>
+                    <p>Military-grade protection with 3x drop protection.</p>
+                    
+                    <div class="accessories-specs">
+                        <span class="accessories-spec-badge"><i class="fas fa-shield-alt"></i> Drop Protection</span>
+                        <span class="accessories-spec-badge"><i class="fas fa-water"></i> Dust Proof</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="price">$49</span>
+                        <span class="original-price">$69</span>
+                    </div>
+
+                    <div class="accessories-actions">
+                        <button class="add-to-cart-btn accessories" 
+                                data-id="acc-003" 
+                                data-name="OtterBox Defender Pro Case" 
+                                data-price="49"
+                                data-image="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smart Watch -->
+            <div class="product-card accessories-card" data-type="wearable">
+                <div class="product-image">
+                    <img src="images/Samsung Galaxy Watch 6.avif" alt="Smart Watch">
+                    <span class="accessories-type-badge wearable">Wearable</span>
+                    <span class="product-badge premium">Premium</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>Samsung Galaxy Watch 6</h3>
+                    <p>Advanced health monitoring and sleep tracking.</p>
+                    
+                    <div class="accessories-specs">
+                        <span class="accessories-spec-badge"><i class="fas fa-heartbeat"></i> Health Tracking</span>
+                        <span class="accessories-spec-badge"><i class="fas fa-wifi"></i> LTE</span>
+                        <span class="accessories-spec-badge"><i class="fas fa-water"></i> 5ATM</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="price">$299</span>
+                        <span class="original-price">$349</span>
+                    </div>
+
+                    <div class="accessories-actions">
+                        <button class="add-to-cart-btn accessories" 
+                                data-id="acc-004" 
+                                data-name="Samsung Galaxy Watch 6" 
+                                data-price="299"
+                                data-image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smart Speaker -->
+            <div class="product-card accessories-card" data-type="smart-home">
+                <div class="product-image">
+                    <img src="images/Amazon Echo Studio.avif" alt="Smart Speaker">
+                    <span class="accessories-type-badge smart-home">Smart Home</span>
+                    <span class="product-badge wireless">Voice Assistant</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>Amazon Echo Studio</h3>
+                    <p>High-fidelity smart speaker with Dolby Atmos.</p>
+                    
+                    <div class="accessories-specs">
+                        <span class="accessories-spec-badge"><i class="fas fa-volume-up"></i> 330W audio</span>
+                        <span class="accessories-spec-badge"><i class="fas fa-microphone"></i> 8 Mics</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="price">$159</span>
+                        <span class="original-price">$199</span>
+                    </div>
+
+                    <div class="accessories-actions">
+                        <button class="add-to-cart-btn accessories" 
+                                data-id="acc-005" 
+                                data-name="Amazon Echo Studio" 
+                                data-price="159"
+                                data-image="https://images.unsplash.com/photo-1543512214-318c7553f230?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <!-- Power Bank -->
+            <div class="product-card accessories-card" data-type="charging">
+                <div class="product-image">
+                    <img src="images/Anker PowerCore 26800mAh.avif" alt="Power Bank">
+                    <span class="accessories-type-badge charging">Charging</span>
+                    <span class="product-badge best-seller">High Capacity</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>Anker PowerCore 26800mAh</h3>
+                    <p>Massive capacity power bank with fast charging.</p>
+                    
+                    <div class="accessories-specs">
+                        <span class="accessories-spec-badge"><i class="fas fa-battery-full"></i> 26800mAh</span>
+                        <span class="accessories-spec-badge"><i class="fas fa-bolt"></i> Fast Charge</span>
+                        <span class="accessories-spec-badge"><i class="fas fa-mobile-alt"></i> 3 Ports</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="price">$59</span>
+                        <span class="original-price">$79</span>
+                    </div>
+
+                    <div class="accessories-actions">
+                        <button class="add-to-cart-btn accessories" 
+                                data-id="acc-006" 
+                                data-name="Anker PowerCore 26800mAh" 
+                                data-price="59"
+                                data-image="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bluetooth Speaker -->
+            <div class="product-card accessories-card" data-type="audio">
+                <div class="product-image">
+                    <img src="images//JBL Charge 5 Portable Speaker.avif" alt="Bluetooth Speaker">
+                    <span class="accessories-type-badge audio">Audio</span>
+                    <span class="product-badge waterproof">Waterproof</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>JBL Charge 5 Portable Speaker</h3>
+                    <p>Waterproof Bluetooth speaker with 20 hours playtime.</p>
+                    
+                    <div class="accessories-specs">
+                        <span class="accessories-spec-badge"><i class="fas fa-water"></i> IP67</span>
+                        <span class="accessories-spec-badge"><i class="fas fa-clock"></i> 20 Hours</span>
+                        <span class="accessories-spec-badge"><i class="fas fa-bolt"></i> Power Bank</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="price">$129</span>
+                        <span class="original-price">$159</span>
+                    </div>
+
+                    <div class="accessories-actions">
+                        <button class="add-to-cart-btn accessories" 
+                                data-id="acc-007" 
+                                data-name="JBL Charge 5 Portable Speaker" 
+                                data-price="129"
+                                data-image="https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tablet Stand -->
+            <div class="product-card accessories-card" data-type="cases">
+                <div class="product-image">
+                    <img src="images/Adjustable Tablet Stand.jpg" alt="Tablet Stand">
+                    <span class="accessories-type-badge cases">Protection</span>
+                    <span class="product-badge premium">Adjustable</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>Adjustable Tablet Stand</h3>
+                    <p>Multi-angle aluminum stand for tablets and phones.</p>
+                    
+                    <div class="accessories-specs">
+                        <span class="accessories-spec-badge"><i class="fas fa-tablet-alt"></i> 4-13 inch</span>
+                        <span class="accessories-spec-badge"><i class="fas fa-weight"></i> Aluminum</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="price">$29</span>
+                        <span class="original-price">$39</span>
+                    </div>
+
+                    <div class="accessories-actions">
+                        <button class="add-to-cart-btn accessories" 
+                                data-id="acc-008" 
+                                data-name="Adjustable Tablet Stand" 
+                                data-price="29"
+                                data-image="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>ElectroMarket</h3>
+                <p>Your trusted marketplace for buying and selling electronics safely and easily.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category-item-card.html">Categories</a></li>
+                    <li><a href="sell-items.html">Sell Item</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">How to Buy</a></li>
+                    <li><a href="#">How to Sell</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> info@electromarket.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 ElectroMarket. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

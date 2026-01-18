@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - ElectroMarket</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ✅ Header -->
+<header>
+  <div class="container header-content">
+
+    <div class="logo">
+      <i class="fas fa-bolt" style="color:orange;"></i>
+      <span>ElectroMarket</span>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="category-item-card.html">Categories</a></li>
+        <li><a href="sell-items.html">Sell Item</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-right-buttons">
+      <button class="btn btn-outline cart-button" onclick="window.location.href='cart.html'">
+        <i class="fa-solid fa-cart-shopping"></i> Cart
+        <span class="cart-count">0</span>
+      </button>
+
+      <div class="auth-buttons">
+        <a href="login.html" class="btn btn-outline">
+          <i class="fa-solid fa-right-to-bracket"></i> Login
+        </a>
+        <a href="signup.html" class="btn btn-primary">
+          <i class="fa-solid fa-user-plus"></i> Sign Up
+        </a>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!-- ✅ About Hero -->
+<section class="section" style="padding-top:60px;">
+  <div class="container">
+    <div class="section-title">
+      <h2>About ElectroMarket</h2>
+      <p>Your trusted marketplace for buying & selling electronics easily and safely.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ About Content -->
+<section class="section">
+  <div class="container">
+    <div class="about-grid" style="display:grid; grid-template-columns: 1fr 1fr; gap:40px; align-items:center;">
+
+      <div class="about-text">
+        <h3 style="margin-bottom:15px;">Who We Are</h3>
+        <p style="color:#64748b; line-height:1.8;">
+          ElectroMarket is an online platform designed to help users buy and sell electronics easily.
+          Whether you're looking for the newest smartphones, laptops, gaming devices, or accessories,
+          ElectroMarket provides a secure and smooth experience.
+        </p>
+
+        <h3 style="margin:30px 0 15px;">Our Mission</h3>
+        <p style="color:#64748b; line-height:1.8;">
+          Our mission is simple: connect users with the best electronic products at competitive prices
+          while ensuring trust, transparency, and user satisfaction.
+        </p>
+
+        <div style="margin-top:25px;">
+          <a href="category-item-card.html" class="btn btn-primary">
+            <i class="fas fa-store"></i> Browse Products
+          </a>
+          <a href="sell-items.html" class="btn btn-outline" style="margin-left:10px;">
+            <i class="fas fa-plus-circle"></i> Sell an Item
+          </a>
+        </div>
+      </div>
+
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80"
+             alt="Electronics Store"
+             style="width:100%; border-radius:18px; box-shadow:0 8px 25px rgba(0,0,0,0.08);">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Why Choose Us -->
+<section class="section" style="background:#f8fafc;">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Why Choose ElectroMarket?</h2>
+      <p>We make buying and selling electronics faster, easier, and safer.</p>
+    </div>
+
+    <div class="features-grid" style="display:grid; grid-template-columns: repeat(3, 1fr); gap:25px;">
+
+      <div class="feature-card" style="background:#fff; padding:25px; border-radius:18px; box-shadow:0 6px 20px rgba(0,0,0,0.06);">
+        <i class="fas fa-shield-alt" style="font-size:32px; color:#2563eb;"></i>
+        <h3 style="margin:15px 0 10px;">Safe Marketplace</h3>
+        <p style="color:#64748b; line-height:1.7;">
+          We help users trade safely with clear product details and trusted communication.
+        </p>
+      </div>
+
+      <div class="feature-card" style="background:#fff; padding:25px; border-radius:18px; box-shadow:0 6px 20px rgba(0,0,0,0.06);">
+        <i class="fas fa-tags" style="font-size:32px; color:#f59e0b;"></i>
+        <h3 style="margin:15px 0 10px;">Best Prices</h3>
+        <p style="color:#64748b; line-height:1.7;">
+          Find competitive prices, compare products, and get great deals from users.
+        </p>
+      </div>
+
+      <div class="feature-card" style="background:#fff; padding:25px; border-radius:18px; box-shadow:0 6px 20px rgba(0,0,0,0.06);">
+        <i class="fas fa-bolt" style="font-size:32px; color:#10b981;"></i>
+        <h3 style="margin:15px 0 10px;">Fast Experience</h3>
+        <p style="color:#64748b; line-height:1.7;">
+          Simple interface, easy category browsing, and quick product listing for sellers.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>ElectroMarket</h3>
+        <p>Your trusted marketplace for buying and selling electronics safely and easily.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="category-item-card.html">Categories</a></li>
+          <li><a href="sell-items.html">Sell Item</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Amman, Jordan</li>
+          <li><i class="fas fa-phone"></i> +962 7X XXX XXXX</li>
+          <li><i class="fas fa-envelope"></i> info@electromarket.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2026 ElectroMarket. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ✅ Cart Script -->
+<script src="js/cart.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>

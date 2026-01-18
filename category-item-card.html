@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categories - ElectroMarket</title>
+
+  <meta name="description" content="Browse electronics by category on ElectroMarket" />
+  <meta name="keywords" content="electronics categories, smartphones, laptops, gaming" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <div class="header-content">
+
+      <!-- Logo -->
+      <div class="logo">
+        <i class="fas fa-laptop-code"></i>
+        <span>ElectroMarket</span>
+      </div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="category-item-card.html">Categories</a></li>
+          <li><a href="sell-items.html">Sell Item</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right buttons -->
+      <div class="header-right-buttons">
+
+        <!-- ✅ CART BUTTON -->
+        <a href="cart.html" class="btn btn-outline cart-button">
+          <i class="fas fa-shopping-cart"></i>
+          Cart
+          <span class="cart-count" id="cart-count">0</span>
+        </a>
+
+        <!-- Auth buttons -->
+        <div class="auth-buttons">
+          <a href="login.html" class="btn btn-outline">
+            <i class="fas fa-sign-in-alt"></i> Login
+          </a>
+          <a href="signup.html" class="btn btn-primary">
+            <i class="fas fa-user-plus"></i> Sign Up
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</header>
+
+
+  <!-- CATEGORIES -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Shop by Category</h2>
+        <p>Select a category to explore products</p>
+      </div>
+
+      <div class="products">
+
+        <!-- ✅ Phones -->
+        <a href="category.php?cat=phones" class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Smartphones" />
+          </div>
+          <div class="product-info">
+            <h3>Smartphones</h3>
+            <p>iPhone, Samsung, Huawei, and more</p>
+          </div>
+        </a>
+
+        <!-- ✅ Computers -->
+        <a href="category.php?cat=computers" class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853" alt="Laptops" />
+          </div>
+          <div class="product-info">
+            <h3>Laptops</h3>
+            <p>MacBook, HP, Dell, Lenovo</p>
+          </div>
+        </a>
+
+        <!-- ✅ Gaming -->
+        <a href="category.php?cat=gaming" class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3" alt="Gaming" />
+          </div>
+          <div class="product-info">
+            <h3>Gaming</h3>
+            <p>Consoles, accessories, controllers</p>
+          </div>
+        </a>
+
+        <!-- ✅ Accessories -->
+        <a href="category.php?cat=accessories" class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Accessories" />
+          </div>
+          <div class="product-info">
+            <h3>Accessories</h3>
+            <p>Headphones, chargers, cables</p>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-column">
+          <h3>ElectroMarket</h3>
+          <p>Your trusted marketplace for buying and selling electronics safely and easily.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category-item-card.html">Categories</a></li>
+            <li><a href="sell-items.html">Sell Item</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">How to Buy</a></li>
+            <li><a href="#">How to Sell</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-envelope"></i> info@electromarket.com</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2023 ElectroMarket. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+<script src="js/cart.js"></script>
+
+</body>
+</html>

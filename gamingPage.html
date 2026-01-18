@@ -1,0 +1,449 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Gear | ElectroMarket</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css"> 
+<script src="js/script.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>ElectroMarket</span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category-item-card.html" class="active">Categories</a></li>
+                    <li><a href="sell-items.html">Sell Item</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right-buttons">
+                <button class="btn btn-outline cart-button" onclick="window.location.href='cart.html'">
+                    <i class="fas fa-shopping-cart"></i> Cart
+                    <span class="cart-count">0</span>
+                </button>
+                
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </a>
+                    <a href="signUp.html" class="btn btn-primary">
+                        <i class="fas fa-user-plus"></i> Sign Up
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- GAMING HERO SECTION -->
+<section class="hero gaming-hero">
+    <div class="container">
+        <h1><i class="fas fa-gamepad"></i> Gaming Gear</h1>
+        <p>Level up your gaming experience with consoles, accessories, and high-performance gear</p>
+    </div>
+</section>
+
+<!-- GAMING FILTERS -->
+<section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2 style="color: #1f2937;">Explore Gaming Categories</h2>
+            <p style="color: #6b7280;">Filter by your gaming setup needs</p>
+        </div>
+
+        <div class="gaming-filters">
+            <button class="gaming-filter-btn active" data-filter="all">
+                <i class="fas fa-dice"></i> All Gaming
+            </button>
+            <button class="gaming-filter-btn" data-filter="console">
+                <i class="fas fa-gamepad"></i> Consoles
+            </button>
+            <button class="gaming-filter-btn" data-filter="pc">
+                <i class="fas fa-desktop"></i> Gaming PCs
+            </button>
+            <button class="gaming-filter-btn" data-filter="accessory">
+                <i class="fas fa-headset"></i> Accessories
+            </button>
+            <button class="gaming-filter-btn" data-filter="vr">
+                <i class="fas fa-vr-cardboard"></i> VR Gear
+            </button>
+        </div>
+
+        <!-- GAMING PRODUCTS LIST -->
+        <div class="products" id="gaming-list">
+
+            <!-- PlayStation 5 -->
+            <div class="product-card gaming-card featured" data-type="console">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="PlayStation 5">
+                    <span class="gaming-category-badge console">Console</span>
+                    <span class="product-badge gaming-hot">Hot Deal</span>
+                    <div class="gaming-discount">-15%</div>
+                </div>
+
+                <div class="product-info">
+                    <h3>PlayStation 5 Disc Edition</h3>
+                    <p>Next-gen gaming console with ultra-high speed SSD, ray tracing, and 4K gaming.</p>
+                    
+                    <div class="gaming-specs">
+                        <span class="gaming-spec-badge platform"><i class="fab fa-playstation"></i> PS5</span>
+                        <span class="gaming-spec-badge storage"><i class="fas fa-hard-drive"></i> 825GB SSD</span>
+                        <span class="gaming-spec-badge resolution"><i class="fas fa-tv"></i> 4K/120fps</span>
+                    </div>
+
+                    <div class="gaming-features">
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> Includes 2 DualSense controllers
+                        </div>
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> Spider-Man 2 game included
+                        </div>
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> 1TB storage expansion
+                        </div>
+                    </div>
+
+                    <div class="gaming-stats">
+                        <div class="gaming-stat">
+                            <i class="fas fa-clock"></i> Used: 3 months
+                        </div>
+                        <div class="gaming-stat">
+                            <i class="fas fa-gamepad"></i> Excellent condition
+                        </div>
+                    </div>
+
+                    <div class="gaming-price">
+                        <span class="price gaming-price">$549</span>
+                        <span class="original-price gaming">$649</span>
+                    </div>
+
+                    <div class="gaming-actions">
+                        <button class="add-to-cart-btn gaming" 
+                                data-id="game-001" 
+                                data-name="PlayStation 5 Disc Edition" 
+                                data-price="549"
+                                data-image="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-bolt"></i> Buy Now
+                        </button>
+                        <button class="view-details-btn gaming">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Xbox Series X -->
+            <div class="product-card gaming-card" data-type="console">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Xbox Series X">
+                    <span class="gaming-category-badge console">Console</span>
+                    <span class="product-badge gaming-bundle">Bundle</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>Xbox Series X + Game Pass</h3>
+                    <p>Most powerful Xbox with 12 TFLOPS, 4K gaming, and 3 months of Game Pass Ultimate.</p>
+                    
+                    <div class="gaming-specs">
+                        <span class="gaming-spec-badge platform"><i class="fab fa-xbox"></i> Xbox Series X</span>
+                        <span class="gaming-spec-badge storage"><i class="fas fa-hard-drive"></i> 1TB SSD</span>
+                        <span class="gaming-spec-badge resolution"><i class="fas fa-tv"></i> 4K/120fps</span>
+                    </div>
+
+                    <div class="gaming-features">
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> Includes Game Pass Ultimate
+                        </div>
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> Wireless controller + headset
+                        </div>
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> 3 months warranty
+                        </div>
+                    </div>
+
+                    <div class="gaming-stats">
+                        <div class="gaming-stat">
+                            <i class="fas fa-clock"></i> Used: 6 months
+                        </div>
+                        <div class="gaming-stat">
+                            <i class="fas fa-gamepad"></i> Like new
+                        </div>
+                    </div>
+
+                    <div class="gaming-price">
+                        <span class="price gaming-price">$499</span>
+                        <span class="original-price gaming">$599</span>
+                    </div>
+
+                    <div class="gaming-actions">
+                        <button class="add-to-cart-btn gaming" 
+                                data-id="game-002" 
+                                data-name="Xbox Series X + Game Pass" 
+                                data-price="499"
+                                data-image="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-bolt"></i> Buy Now
+                        </button>
+                        <button class="view-details-btn gaming">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gaming PC -->
+            <div class="product-card gaming-card" data-type="pc">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Gaming PC">
+                    <span class="gaming-category-badge pc">Gaming PC</span>
+                    <span class="product-badge gaming-exclusive">High-End</span>
+                    <div class="gaming-discount">-20%</div>
+                </div>
+
+                <div class="product-info">
+                    <h3>RTX 4090 Gaming Beast</h3>
+                    <p>Ultimate gaming PC with RGB lighting, liquid cooling, and top-tier components.</p>
+                    
+                    <div class="gaming-specs">
+                        <span class="gaming-spec-badge"><i class="fas fa-microchip"></i> i9-13900K</span>
+                        <span class="gaming-spec-badge"><i class="fas fa-video"></i> RTX 4090</span>
+                        <span class="gaming-spec-badge"><i class="fas fa-memory"></i> 64GB RAM</span>
+                        <span class="gaming-spec-badge"><i class="fas fa-hard-drive"></i> 2TB NVMe</span>
+                    </div>
+
+                    <div class="gaming-features">
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> 240Hz gaming monitor included
+                        </div>
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> Mechanical keyboard + mouse
+                        </div>
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> Custom water cooling
+                        </div>
+                    </div>
+
+                    <div class="gaming-stats">
+                        <div class="gaming-stat">
+                            <i class="fas fa-bolt"></i> 4K Ready
+                        </div>
+                        <div class="gaming-stat">
+                            <i class="fas fa-snowflake"></i> Liquid Cooled
+                        </div>
+                    </div>
+
+                    <div class="gaming-price">
+                        <span class="price gaming-price">$3,299</span>
+                        <span class="original-price gaming">$4,199</span>
+                    </div>
+
+                    <div class="gaming-actions">
+                        <button class="add-to-cart-btn gaming" 
+                                data-id="game-003" 
+                                data-name="RTX 4090 Gaming Beast PC" 
+                                data-price="3299"
+                                data-image="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-bolt"></i> Buy Now
+                        </button>
+                        <button class="view-details-btn gaming">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gaming Headset -->
+            <div class="product-card gaming-card" data-type="accessory">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Gaming Headset">
+                    <span class="gaming-category-badge accessory">Accessory</span>
+                    <span class="product-badge gaming-new">Wireless</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>SteelSeries Arctis Nova Pro</h3>
+                    <p>Premium wireless gaming headset with active noise cancellation and dual batteries.</p>
+                    
+                    <div class="gaming-specs">
+                        <span class="gaming-spec-badge"><i class="fas fa-wifi"></i> Wireless</span>
+                        <span class="gaming-spec-badge"><i class="fas fa-volume-up"></i> Noise Cancel</span>
+                        <span class="gaming-spec-badge"><i class="fas fa-clock"></i> 36hr battery</span>
+                    </div>
+
+                    <div class="gaming-features">
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> Multi-platform compatible
+                        </div>
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> ClearCast microphone
+                        </div>
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> Sonar audio software
+                        </div>
+                    </div>
+
+                    <div class="gaming-stats">
+                        <div class="gaming-stat">
+                            <i class="fas fa-bluetooth"></i> Wireless
+                        </div>
+                        <div class="gaming-stat">
+                            <i class="fas fa-microphone"></i> Detachable Mic
+                        </div>
+                    </div>
+
+                    <div class="gaming-price">
+                        <span class="price gaming-price">$299</span>
+                        <span class="original-price gaming">$349</span>
+                    </div>
+
+                    <div class="gaming-actions">
+                        <button class="add-to-cart-btn gaming" 
+                                data-id="game-004" 
+                                data-name="SteelSeries Arctis Nova Pro" 
+                                data-price="299"
+                                data-image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-bolt"></i> Buy Now
+                        </button>
+                        <button class="view-details-btn gaming">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gaming Monitor -->
+            <div class="product-card gaming-card" data-type="accessory">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Gaming Monitor">
+                    <span class="gaming-category-badge accessory">Accessory</span>
+                    <span class="product-badge gaming-exclusive">4K 144Hz</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>Samsung Odyssey G7 32"</h3>
+                    <p>4K gaming monitor with 144Hz refresh rate, 1ms response time, and HDR600.</p>
+                    
+                    <div class="gaming-specs">
+                        <span class="gaming-spec-badge resolution"><i class="fas fa-tv"></i> 4K UHD</span>
+                        <span class="gaming-spec-badge refresh-rate"><i class="fas fa-sync"></i> 144Hz</span>
+                        <span class="gaming-spec-badge"><i class="fas fa-bolt"></i> 1ms GtG</span>
+                    </div>
+
+                    <div class="gaming-features">
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> Quantum Dot technology
+                        </div>
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> G-Sync & FreeSync Premium
+                        </div>
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> Curved 1000R display
+                        </div>
+                    </div>
+
+                    <div class="gaming-stats">
+                        <div class="gaming-stat">
+                            <i class="fas fa-ruler-combined"></i> 32-inch
+                        </div>
+                        <div class="gaming-stat">
+                            <i class="fas fa-video"></i> HDR600
+                        </div>
+                    </div>
+
+                    <div class="gaming-price">
+                        <span class="price gaming-price">$699</span>
+                        <span class="original-price gaming">$849</span>
+                    </div>
+
+                    <div class="gaming-actions">
+                        <button class="add-to-cart-btn gaming" 
+                                data-id="game-005" 
+                                data-name="Samsung Odyssey G7 32 Monitor" 
+                                data-price="699"
+                                data-image="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-bolt"></i> Buy Now
+                        </button>
+                        <button class="view-details-btn gaming">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VR Headset -->
+            <div class="product-card gaming-card" data-type="vr">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1593998063271-6a94e576e7c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="VR Headset">
+                    <span class="gaming-category-badge vr">VR Gear</span>
+                    <span class="product-badge gaming-bundle">Complete Kit</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>Meta Quest 3 512GB</h3>
+                    <p>Standalone VR headset with mixed reality, high-res displays, and Touch Plus controllers.</p>
+                    
+                    <div class="gaming-specs">
+                        <span class="gaming-spec-badge"><i class="fas fa-microchip"></i> Snapdragon XR2</span>
+                        <span class="gaming-spec-badge storage"><i class="fas fa-hard-drive"></i> 512GB</span>
+                        <span class="gaming-spec-badge"><i class="fas fa-eye"></i> Mixed Reality</span>
+                    </div>
+
+                    <div class="gaming-features">
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> 6 games included
+                        </div>
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> Touch Plus controllers
+                        </div>
+                        <div class="gaming-feature">
+                            <i class="fas fa-check-circle"></i> No PC required
+                        </div>
+                    </div>
+
+                    <div class="gaming-stats">
+                        <div class="gaming-stat">
+                            <i class="fas fa-expand"></i> 4K+ per eye
+                        </div>
+                        <div class="gaming-stat">
+                            <i class="fas fa-battery-full"></i> 2-3 hours
+                        </div>
+                    </div>
+
+                    <div class="gaming-price">
+                        <span class="price gaming-price">$649</span>
+                        <span class="original-price gaming">$749</span>
+                    </div>
+
+                    <div class="gaming-actions">
+                        <button class="add-to-cart-btn gaming" 
+                                data-id="game-006" 
+                                data-name="Meta Quest 3 512GB VR" 
+                                data-price="649"
+                                data-image="https://images.unsplash.com/photo-1593998063271-6a94e576e7c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-bolt"></i> Buy Now
+                        </button>
+                        <button class="view-details-btn gaming">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gaming Chair -->
+            <div class="product-card gaming-card" data-type="accessory">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3
