@@ -3347,3 +3347,10 @@ textarea.form-control {
   top: -8px;
   right: -8px;
 }
+
+.logo-img{
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
