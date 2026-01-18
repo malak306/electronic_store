@@ -1,0 +1,22 @@
+services:
+  web:
+    build: .
+    container_name: electronic_web
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    container_name: electronic_db
+    environment:
+      MYSQL_DATABASE: electronics_store
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: apppass
+      MYSQL_ROOT_PASSWORD: rootpass
+    volumes:
+      - dbdata:/var/lib/mysql
+
+volumes:
+  dbdata:
